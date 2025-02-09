@@ -7,7 +7,7 @@ export async function POST(req: Request) {
     const { email, prenom, motdepasse, nom } = await req.json();
 
     // Vérification si tous les champs sont fournis
-    if (!email || !prenom || !motdepasse || !nom) {
+    if (!email || !prenom || !motdepasse || !motdepasse) {
       return NextResponse.json(
         { error: "Tous les champs sont requis." },
         { status: 400 }

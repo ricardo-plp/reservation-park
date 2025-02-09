@@ -8,7 +8,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="fr">
       <body>
-        {/* Envelopper l'application avec SessionProvider */}
+       
         <SessionProvider>{children}</SessionProvider>
       </body>
     </html>

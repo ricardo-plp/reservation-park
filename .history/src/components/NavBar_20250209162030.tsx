@@ -19,6 +19,8 @@ const Navbar = () => {
             <li>
               <Link href="/profile">Mon Profil</Link>
             </li>
+          
+            </li>
             <li>
               <button onClick={() => signOut()}>Déconnexion</button>
             </li>

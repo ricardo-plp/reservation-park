@@ -1,6 +1,5 @@
 // src/app/layout.tsx
 "use client";
-
 import { SessionProvider } from "next-auth/react"; // Importer SessionProvider
 import { ReactNode } from "react"; // Importer ReactNode pour typer les props
 

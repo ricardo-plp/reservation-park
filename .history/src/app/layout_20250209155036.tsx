@@ -8,8 +8,10 @@ export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="fr">
       <body>
+      <NextAuthProvider>
         {/* Envelopper l'application avec SessionProvider */}
         <SessionProvider>{children}</SessionProvider>
+        <NextAuthProvider></NextAuthProvider>
       </body>
     </html>
   );

@@ -1,5 +1,5 @@
 // src/components/Navbar.tsx
-"use client";
+
 
 import { useSession, signOut } from "next-auth/react";
 import Link from "next/link";
@@ -20,16 +20,22 @@ const Navbar = () => {
               <Link href="/profile">Mon Profil</Link>
             </li>
             <li>
+              <Link href="/profile/update">Modifier mon profil</Link>
+            </li>
+            <li>
+              <Link href="/profile/delete">Supprimer mon profil</Link>
+            </li>
+            <li>
               <button onClick={() => signOut()}>Déconnexion</button>
             </li>
           </>
         ) : (
           <>
             <li>
-              <Link href="/api/auth/signin">Connexion</Link>
+              <Link href="/auth/signin">Connexion</Link>
             </li>
             <li>
-              <Link href="/signup">Créer un compte</Link>
+              <Link href="/auth/signup">Créer un compte</Link>
             </li>
           </>
         )}

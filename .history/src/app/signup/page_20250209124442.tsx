@@ -1,6 +1,6 @@
 // src/app/signup/page.tsx
 
-"use client";
+'U'
 
 import { useState } from "react";
 

@@ -3,6 +3,7 @@
 
 import { SessionProvider } from "next-auth/react"; // Importer SessionProvider
 import { ReactNode } from "react"; // Importer ReactNode pour typer les props
+import NextAuthProvider from "@/app/NextAuthProvider";
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (

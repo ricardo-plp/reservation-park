@@ -4,10 +4,10 @@ import bcrypt from "bcrypt";
 
 export async function POST(req: Request) {
   try {
-    const { email, prenom, motdepasse, nom } = await req.json();
+    const { email, prenom, motdepasse } = await req.json();
 
     // Vérification si tous les champs sont fournis
-    if (!email || !prenom || !motdepasse || !nom) {
+    if (!email || !prenom || !motdepasse) {
       return NextResponse.json(
         { error: "Tous les champs sont requis." },
         { status: 400 }
